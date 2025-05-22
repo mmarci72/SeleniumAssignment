@@ -49,6 +49,7 @@ public class SettingsTest extends BaseTest {
 
         //Navigate away and back to settings page to check whether changes have been saved
         driver.navigate().back();
+        driver.navigate().back();
         driver.navigate().forward();
 
         assertEquals(days, newSettingsPage.getNextDays());

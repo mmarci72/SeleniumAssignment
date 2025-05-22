@@ -33,7 +33,7 @@ public class MainPage extends BasePage {
     }
 
     public MainPage consentToCookies() {
-        if (this.waitForElementToAppear(consentCookieButtonLocator, 5)) {
+        if (this.waitForElementToAppear(consentCookieButtonLocator, 3)) {
             this.waitAndReturnElement(consentCookieButtonLocator).click();
         }
 
